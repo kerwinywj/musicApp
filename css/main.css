@@ -1,0 +1,322 @@
+/* CSS reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	background-color: #d2d5d6;
+	height: 100%;
+	font-family: "Microsoft Yahei", arial, sans-serif;
+}
+i {
+	cursor: pointer;
+	font-style: normal;
+    text-decoration: none;
+}
+a {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+.text-ellipse {
+	white-space: nowrap;
+	text-overflow: ellipsis; /* 显示省略符号来代表被修剪的文本。 */
+	overflow: hidden;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+/* 样式 */
+.wrap {
+	position: relative;
+	margin: 0 auto;
+	top: 50%;
+	margin-top: -250px;
+	width: 440px;
+	height: 500px;
+	border-radius: 10px;
+	box-shadow: 2px 6px 7px #999;
+	background-color: #eef1f2;
+	overflow: hidden;
+}
+
+.music-menu {
+	position: absolute;
+	top: 0;
+	left: -150px;
+	width: 150px;
+	z-index: 10;
+	height: 500px;
+	background-color: rgba(0,0,0,0.5);
+	color: #ddd;
+	padding: 1em 0;
+	text-align: center;
+	overflow-y: scroll;
+}
+.music-item {
+	padding: 1em;
+	cursor: pointer;
+}
+.music-item-active { /* 被点击选中时，灰色背景，白色字体 */
+	background-color: #ccc;
+	color: #fff;
+}
+.wrap-bg {
+	width: 100%;
+	height: 250px; /* 只用.wrap高度一半 */
+	position: relative;
+}
+.wrap-content {
+	width: 400px;
+	height: 110px;
+	padding: 30px 20px 10px 20px;
+}
+.wrap-content .music-message {
+	display: inline-block;
+	width: 280px;
+	height: 100%;
+}
+.wrap-content .musicname {
+	font-size: 18px;
+	font-weight: bold;
+	color: #455569;
+}
+.musicer .album .record {
+	font-size: 16px;
+	color: #455569;
+}
+.wrap-content .music-icon {
+	float: right;
+}
+.wrap-content .music-icon i {
+	font-size: 22px;
+	margin-left: 10px;
+}
+i.colored {color: rgba(109, 95, 95, 0.9);}
+i.stared {color: #feec98;}
+i.loved {color: #fe8698;}
+
+.wrap-content .music-icon i:hover {
+	text-shadow: 1px 1px 1px #ccc;
+}
+
+.wrap-basebar {
+	position: relative;
+	width: 400px;
+	height: 4px;
+	background-color: #cdd2d7;
+	margin: 0 auto;
+	border-radius: 2px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.wrap-basebar .progressbar { /* 播放进度条 */
+	display: block;
+	width: 0%;
+	height: 4px;
+	background-color: #414141;
+}
+
+.wrap-control {
+	position: relative;
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.wrap-control li {
+	cursor: pointer;
+}
+.play-control-i {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #414141;
+	border-radius: 20px;
+	color: #fff;
+	margin-right: 5px;
+	padding: 1px;
+}
+li.volume-control, li.music-menu-icon, li.music-random {
+	background-color: #d2d5d6;
+	color: #000;
+}
+.volume-control {
+	position: relative;
+}
+.volume-control-progress {
+	display: none;
+	position: absolute;
+	top: -100px;
+	width: 40px;
+	height: 100px;
+	cursor: pointer;
+	border-radius: 5px;
+	background: linear-gradient(#EEF1F2, #D2D5D6); /* 默认从上到下，线性渐变*/
+	overflow: hidden;
+}
+.volume-control-time-end {
+	height: 100px;
+	width: 4px;
+	background-color: rgba(160, 157, 157, 0.6);
+	margin: 0 auto;
+}
+.volume-control-tag { /* 音量大小的小圆点 */
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	background-color: #5d595d;
+	margin: 0 auto;
+	margin-top: -12px;
+}
+.volume-control-time-start {
+	width: 4px;
+	background-color: #5d595d;
+	margin: 0 auto;
+}
+
+/* CSS3自定义滚动条 */
+::-webkit-scrollbar {
+	width: 12px;
+}
+/* 滚动条里面可以拖动的部分 滚动条里面的小方块 圆角*/
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(210,213,214,0.5);
+}
+/*  滚动条的轨道（里面装有Thumb）盒内阴影+圆角 */
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.2);
+}
+/* 内层轨道，滚动条中间部分  */
+::-webkit-scrollbar-track-piece {
+	background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
